@@ -9,3 +9,15 @@ Plugin to turn your Suneidesis Chatbot into a Telegram Bot
 - Done!
 
 https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token
+
+## How to use it
+
+```
+    Parser bot = new EchoBox(); // Use your own parser
+
+    String token = "123456:ABCDE123456";
+
+    Telegram telegram = new Telegram(token);
+    telegram.init();
+    telegram.addParser(bot);
+```
